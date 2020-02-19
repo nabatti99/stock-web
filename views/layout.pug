@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="bootstrap-4.3.1/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="bootstrap-4.3.1/dist/css/transitions.css")
+        link(rel="stylesheet", href="fontawesome/css/all.min.css")
+        block CSS
+        script(src="bootstrap-4.3.1/dist/js/jquery-3.3.1.slim.min.js")
+        script(src="bootstrap-4.3.1/dist/js/bootstrap.min.js")
+        block JS
+        title 
+            block Title
+    body.bg-secondary
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            button.navbar-toggler(data-toggle="collapse", data-target=".collapse")
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse
+                a(href="#").navbar-brand
+                    h3.text-center Stock
+                ul.navbar-nav.m-auto
+                    li.nav-item.active
+                        a(href="#").nav-link HOME
+                    li.nav-item
+                        a(href="#").nav-link MUSIC
+                form.form-inline
+                    button.btn.btn-outline-success Login
+
+        block Body
+
+        nav.navbar.navbar-expand.navbar-dark.bg-dark.py-0
+            p.inline-block.text-muted.mb-0.mx-5 developed by Minh
+            ul.navbar-nav.ml-auto.mr-5
+                li.nav-item.px-2.border-left.border-right.border-secondary
+                    a(href="#").nav-link
+                        i.fab.fa-facebook-f
+                li.nav-item.px-1.border-right.border-secondary
+                    a(href="").nav-link
+                        i.fab.fa-google-plus-g

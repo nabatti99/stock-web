@@ -1,0 +1,75 @@
+extends layout.pug
+block CSS
+    link(rel="stylesheet", href="css/index.css")
+block JS
+
+block Title
+
+block Body
+    header.carousel.slide(data-ride="carousel")
+        .carousel-inner
+            .carousel-item.container-fluid.bg-white.p-5.active
+                .row.justify-content-center
+                    .col-lg-5.col-12.mt-5
+                        .row
+                            h1.display-2 Stock
+                        .row
+                            p.lead.text-muted Free background stocks for your video.
+                        .row.mt-3.d-lg-block.d-none
+                            a(href="#").btn.btn-success.rounded-0 GETTING START
+                    .col-lg-5.col-12
+                        .row.justify-content-center
+                            img(src="https://picsum.photos/seed/picsum/300/300")
+            .carousel-item.container-fluid.bg-info.p-5
+                .row.justify-content-center
+                    .col-lg-5.col-12.mt-5
+                        .row
+                            h1.display-2.text-white Use It Now
+                        .row
+                            p.lead.text-light The stock is all free.
+                        .row.mt-3.d-lg-block.d-none
+                            a(href="#").btn.btn-success.rounded-0 GETTING START
+                    .col-lg-5.col-12
+                        .row.justify-content-center
+                            img(src="https://picsum.photos/seed/picsum/300/300")
+            .carousel-item.container-fluid.bg-dark.p-5
+                .row.justify-content-center
+                    .col-lg-5.col-12.mt-5
+                        .row
+                            h1.display-2.text-light High Quality
+                        .row
+                            p.lead.text-light We provide the highest quality production for you.
+                        .row.mt-3.d-lg-block.d-none
+                            a(href="#").btn.btn-success.rounded-0 GETTING START
+                    .col-lg-5.col-12
+                        .row.justify-content-center
+                            img(src="https://picsum.photos/seed/picsum/300/300")
+
+    section.bg-white.mx-lg-5.mx-0.my-5.py-5
+        .container
+            .row
+                .col-lg-6.order-lg-1.order-2
+                    .row
+                        .col-lg-5.col-3.mt-4
+                            .row.flex-column
+                                i.text-center.fal.fa-music.section1-symbol.mb-2
+                                p.text-center Free Music
+                        .col-lg-5.col-3.mt-4
+                            .row.flex-column
+                                i.text-center.fal.fa-check.section1-symbol.mb-2
+                                p.text-center Copyright Clear
+                        .col-lg-5.col-3.mt-4
+                            .row.flex-column
+                                i.text-center.fal.fa-infinity.section1-symbol.mb-2
+                                p.text-center Use Forever
+                        .col-lg-5.col-3.mt-4
+                            .row.flex-column
+                                i.text-center.fal.fa-layer-group.section1-symbol.mb-2
+                                p.text-center Alway Update
+                .col-lg-6.order-lg-2.order-1
+                    .row.justify-content-lg-start.justify-content-center
+                        h4.display-4.m-0 Incredible Music.
+                        h4.display-4 Free Lciense.
+                        p.text-muted.mb-1.text-lg-left.text-center Our curated library of royalty free music gives you the polished feel of the big production houses.
+                        p.text-muted Plus, all our tracks are 100% highest quality and copyright clear.
+                        a(href="#").btn.btn-success.rounded-0.text-uppercase.my-4 Discover Now

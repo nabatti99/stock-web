@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock</title>
+    <script src="/bootstrap-4.3.1/dist/js/axios.min.js"></script>
+    <script src="/bootstrap-4.3.1/dist/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-4.3.1/dist/css/transitions.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="container">
+        <section class="col-12">
+            <h1 id="label" class="text-center text-white">Stock</h1>
+            <div id="label-break"></div>
+            <h5 id="description" class="text-center text-white font-weight-light">Free music and image for video</h5>
+            <article class="col-8 col-xs-12 px-0 py-3">
+                <ul id="logos-area" class="p-0 m-0">
+                    <li class="logo mr-5">
+                        <a href="https://www.w3schools.com/html/" id="html-logo">
+                            <i class="fab fa-html5"></i>
+                        </a>
+                    </li>
+                    <li class="logo mr-5">
+                        <a href="https://www.w3schools.com/css/" id="css-logo">
+                            <i class="fab fa-css3"></i>
+                        </a>
+                    </li>
+                    <li class="logo mr-5">
+                        <a href="https://www.w3schools.com/js/" id="js-logo">
+                            <i class="fab fa-js"></i>
+                        </a>
+                    </li>
+                    <li class="logo mr-5">
+                        <a href="https://getbootstrap.com/" id="bootstrap-logo">
+                            <i class="fab fa-bootstrap"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-area row justify-content-end">
+                    <p>
+                        developed by
+                        <span>Minh</span>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <div class="features">
+        <section class="container" id="music">
+            <div class="row justify-content-center">
+                <h1 class="text-dark">MUSIC</h1>
+            </div>
+            <div class="row justify-content-center text-secondary">
+                <p>Free background music for video</p>
+            </div>
+            <div class="row justify-content-center">
+                <form target="#music" class="col-8">
+                    <div class="form-group row justify-content-around">
+                        <label for="duration" class="col-sm-2 col-form-label">Duration</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="duration" placeholder="60 (The number must be divided by 15)">
+                        </div>
+                        <div class="col-sm-2">
+                            <div id="music-search-button" class="btn btn-primary mt-2 mt-sm-0">Search</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="audio-controller" class="row justify-content-center pt-4">
+                <audio src="" name="audio" controls class="col-8 col-xs-12">
+                </audio>
+            </div>
+            <div class="row justify-content-center pt-4">
+                <table class="col-11 table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="d-none d-sm-block">#</th>
+                            <th>Name</th>
+                            <th>Kind</th>
+                            <th class="text-center"><i class="fas fa-volume-up"></i></th>
+                            <th class="text-center">Download</th> 
+                            <th class="text-center d-none d-sm-block">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody id="music-source">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
